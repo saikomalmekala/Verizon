@@ -18,12 +18,12 @@ const Footer = () => {
         </div>
         <div className="footer-section links">
           <h2>Follow us on</h2>
-      
-        <button> <a href="https://www.instagram.com/accounts/login/">Instagram</a></button>
-        <button><a href="https://twitter.com/login">Twitter</a></button>
-           <button> <a href="https://www.facebook.com/">FaceBook</a></button>
-            <button><a href="https://www.youtube.com/?gl=IN">youtube</a></button>
-          
+
+          <a href="https://www.instagram.com/accounts/login/">Instagram</a><br></br>
+          <a href="https://twitter.com/login">Twitter</a><br></br>
+          <a href="https://www.facebook.com/">FaceBook</a><br></br>
+          <a href="https://www.youtube.com/?gl=IN">youtube</a><br></br>
+
         </div>
         {/* <div className="footer-section contact-form">
           <h2>Contact Us</h2>

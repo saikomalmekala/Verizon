@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Dropdown } from 'react-bootstrap';
 
 
 function RaiseRequest() {
@@ -10,37 +11,41 @@ function RaiseRequest() {
 
                 <div className="col-4">
                     <div className="row">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                chat with us
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <p>123457890</p>
-                                <p>098754321</p>
-                            </div>
-                        </div>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                                E-mail Us
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">abcd@gmail.com</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">bdc@yahoo.com</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">efgh@12345.com</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </div>
                     <div className="row">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                chat with us
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <p>123457890</p>
-                                <p>098754321</p>
-                            </div>
-                        </div>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                                Chat with us
+                            </Dropdown.Toggle>
+
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="/">Whats app:- 1234567</Dropdown.Item>
+                                <Dropdown.Item href="/">Hyderabad:- 98765432</Dropdown.Item>
+                                <Dropdown.Item href="/">Chennai:- 1234567</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </div>
                     <div className="row">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                chat with us
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <p>123457890</p>
-                                <p>098754321</p>
-                            </div>
-                        </div>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                                Phone
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                <Dropdown.Item href="#/action-1">Main Branch:- 123456789</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Hyderabad:- 987654321</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Chennai:- 222266666</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     </div>
                 </div>
 
